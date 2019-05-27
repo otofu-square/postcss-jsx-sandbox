@@ -1,0 +1,43 @@
+{
+  "name": "stylelint",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "yarn stylelint --fix && yarn prettier --write",
+    "prettier": "prettier 'src/**/*.{js,jsx}'",
+    "stylelint": "stylelint --cache --syntax css-in-js './**/*.{js,jsx}'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@emotion/core": "10.0.10",
+    "@emotion/styled": "10.0.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
+  },
+  "devDependencies": {
+    "prettier": "1.17.1",
+    "stylelint": "10.0.1",
+    "stylelint-config-prettier": "5.2.0",
+    "stylelint-config-recess-order": "2.0.2",
+    "stylelint-config-standard": "18.3.0"
+  }
+}
